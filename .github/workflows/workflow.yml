@@ -40,7 +40,7 @@ jobs:
       - name: Merge to main
         if: ${{ success() }}
         run: |
-          git checkout main
+          git fetch origin main
           git merge --ff-only $GITHUB_REF
           git push
       - name: Move rejected commits
