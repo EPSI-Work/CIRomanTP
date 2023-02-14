@@ -40,7 +40,7 @@ jobs:
       - name: Merge to main
         if: ${{ success() }}
         run: |
-          git fetch origin main --rebase
+          git pull origin main --rebase
           git checkout -B main origin/main
           git merge --ff-only $GITHUB_REF --allow-unrelated-histories
           git push
