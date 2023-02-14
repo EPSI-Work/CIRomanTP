@@ -46,6 +46,8 @@ jobs:
       - name: Move rejected commits
         if: ${{ failure() }}
         run: |
-          git branch -d rejected/no_build
+          if git show-ref --verify --quiet "refs/heads/rejected/no_build"; then
+            git branch -d rejected/no_build
+          fi
           git checkout -b rejected/no_build
           git push -u origin rejected/no_build
