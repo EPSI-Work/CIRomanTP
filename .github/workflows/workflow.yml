@@ -41,6 +41,7 @@ jobs:
         if: ${{ success() }}
         run: |
           git fetch origin main
+          git checkout main
           git merge --ff-only $GITHUB_REF
           git push
       - name: Move rejected commits
