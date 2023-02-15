@@ -42,7 +42,7 @@ jobs:
         run: |
           git pull origin main --ff-only
           git checkout -B main origin/main
-          git merge --ff-only $GITHUB_REF --allow-unrelated-histories
+          git merge $GITHUB_REF
           git push
 
       - name: Move rejected commits
