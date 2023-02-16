@@ -42,7 +42,8 @@ jobs:
         run: |
           git config --global user.name "CIBot"
           git config --global user.email "cibot@gmail.com"
-          git fetch origin
+          git pull origin main
+          git pull origin develop
           git checkout main
           git show main
           git merge --ff develop -X theirs 
