@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     #if: github.ref == 'refs/heads/ft'
     steps:
-      - uses: actions/checkout@v3
+      #- uses: actions/checkout@v3
       - name: Merge to main
         if: ${{ success() }}
         run: |
