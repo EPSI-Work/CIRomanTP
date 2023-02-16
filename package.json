@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "test": "vitest",
+        "coverage": "vitest run --coverage",
+        "lint": "eslint --fix **.ts"
+    },
+    "dependencies": {
+        "vite": "^4.0.4",
+        "vitest": "^0.28.1"
+    },
+    "devDependencies": {
+        "eslint-import-resolver-typescript": "^3.5.3",
+        "eslint-plugin-import": "^2.27.5",
+        "@vitest/coverage-c8": "^0.28.5"
+    }
+}
