@@ -42,8 +42,11 @@ jobs:
         run: |
           git config --global user.name "CIBot"
           git config --global user.email "cibot@gmail.com"
-          git pull origin main
-          git pull origin develop
+          git rev-parse origin/develop
+          git rev-parse develop
+          echo "-----------------"
+          git rev-parse origin/main
+          git rev-parse main
           git checkout main
           git show main
           git merge --ff develop -X theirs 
