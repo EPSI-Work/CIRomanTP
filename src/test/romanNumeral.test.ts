@@ -42,5 +42,9 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(10);
         expect(result).toBe('X');
     });
+    test('converts 11 to "XI"', () => {
+        const result = convertToRoman(11);
+        expect(result).toBe('XI');
+    });
 
 });
