@@ -26,6 +26,9 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(6);
         expect(result).toBe('VI');
     });
-
+    test('converts 7 to "VII"', () => {
+        const result = convertToRoman(7);
+        expect(result).toBe('VII');
+    });
 
 });
