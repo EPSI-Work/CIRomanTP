@@ -58,6 +58,10 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(14);
         expect(result).toBe('XIV');
     });
+    test('converts 15 to "XV"', () => {
+        const result = convertToRoman(15);
+        expect(result).toBe('XV');
+    });
 
 
 });
