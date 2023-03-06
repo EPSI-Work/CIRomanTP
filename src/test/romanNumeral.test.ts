@@ -14,6 +14,10 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(3);
         expect(result).toBe('III');
     });
+    test('converts 4 to "IV"', () => {
+        const result = convertToRoman(4);
+        expect(result).toBe('IV');
+    });
 
 
 });
