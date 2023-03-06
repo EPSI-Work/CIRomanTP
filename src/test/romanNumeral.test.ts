@@ -98,4 +98,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(24);
         expect(result).toBe('XXIV');
     });
+    test('converts 25 to "XXV"', () => {
+        const result = convertToRoman(25);
+        expect(result).toBe('XXV');
+    });
 });
