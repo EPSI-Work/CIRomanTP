@@ -50,5 +50,9 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(12);
         expect(result).toBe('XII');
     });
+    test('converts 13 to "XIII"', () => {
+        const result = convertToRoman(13);
+        expect(result).toBe('XIII');
+    });
 
 });
