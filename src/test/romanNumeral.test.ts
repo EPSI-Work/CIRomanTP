@@ -62,6 +62,10 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(15);
         expect(result).toBe('XV');
     });
+    test('converts 16 to "XVI"', () => {
+        const result = convertToRoman(16);
+        expect(result).toBe('XVI');
+    });
 
 
 });
