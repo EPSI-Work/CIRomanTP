@@ -34,5 +34,9 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(8);
         expect(result).toBe('VIII');
     });
+    test('converts 9 to "IX"', () => {
+        const result = convertToRoman(9);
+        expect(result).toBe('IX');
+    });
 
 });
