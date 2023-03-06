@@ -90,4 +90,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(22);
         expect(result).toBe('XXII');
     });
+    test('converts 23 to "XXIII"', () => {
+        const result = convertToRoman(23);
+        expect(result).toBe('XXIII');
+    });
 });
