@@ -18,6 +18,10 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(4);
         expect(result).toBe('IV');
     });
+    test('converts 5 to "V"', () => {
+        const result = convertToRoman(5);
+        expect(result).toBe('V');
+    });
 
 
 });
