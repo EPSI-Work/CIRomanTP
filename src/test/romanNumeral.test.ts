@@ -38,5 +38,9 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(9);
         expect(result).toBe('IX');
     });
+    test('converts 10 to "X"', () => {
+        const result = convertToRoman(10);
+        expect(result).toBe('X');
+    });
 
 });
