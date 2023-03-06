@@ -30,5 +30,9 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(7);
         expect(result).toBe('VII');
     });
+    test('converts 8 to "VIII"', () => {
+        const result = convertToRoman(8);
+        expect(result).toBe('VIII');
+    });
 
 });
