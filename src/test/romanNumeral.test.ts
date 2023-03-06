@@ -106,4 +106,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(26);
         expect(result).toBe('XXVI');
     });
+    test('converts 27 to "XXVII"', () => {
+        const result = convertToRoman(27);
+        expect(result).toBe('XXVII');
+    });
 });
