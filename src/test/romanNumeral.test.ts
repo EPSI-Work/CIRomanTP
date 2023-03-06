@@ -118,4 +118,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(29);
         expect(result).toBe('XXIX');
     });
+    test('converts 30 to "XXX"', () => {
+        const result = convertToRoman(30);
+        expect(result).toBe('XXX');
+    });
 });
