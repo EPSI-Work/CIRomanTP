@@ -78,4 +78,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(19);
         expect(result).toBe('XIX');
     });
+    test('converts 20 to "XX"', () => {
+        const result = convertToRoman(20);
+        expect(result).toBe('XX');
+    });
 });
