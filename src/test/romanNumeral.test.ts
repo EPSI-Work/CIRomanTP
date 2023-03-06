@@ -6,6 +6,10 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(1);
         expect(result).toBe('I');//cc
     });
+    test('converts 2 to "II"', () => {
+        const result = convertToRoman(2);
+        expect(result).toBe('II');//cc
+    });
 
 
 });
