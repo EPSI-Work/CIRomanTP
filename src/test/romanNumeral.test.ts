@@ -74,4 +74,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(18);
         expect(result).toBe('XVIII');
     });
+    test('converts 19 to "XIX"', () => {
+        const result = convertToRoman(19);
+        expect(result).toBe('XIX');
+    });
 });
