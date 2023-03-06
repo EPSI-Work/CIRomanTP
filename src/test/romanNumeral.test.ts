@@ -114,4 +114,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(28);
         expect(result).toBe('XXVIII');
     });
+    test('converts 29 to "XXIX"', () => {
+        const result = convertToRoman(29);
+        expect(result).toBe('XXIX');
+    });
 });
