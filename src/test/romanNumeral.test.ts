@@ -86,4 +86,8 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(21);
         expect(result).toBe('XXI');
     });
+    test('converts 22 to "XXII"', () => {
+        const result = convertToRoman(22);
+        expect(result).toBe('XXII');
+    });
 });
