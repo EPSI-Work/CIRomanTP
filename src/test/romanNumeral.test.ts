@@ -22,6 +22,10 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(5);
         expect(result).toBe('V');
     });
+    test('converts 6 to "VI"', () => {
+        const result = convertToRoman(6);
+        expect(result).toBe('VI');
+    });
 
 
 });
