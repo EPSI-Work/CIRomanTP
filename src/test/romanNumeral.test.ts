@@ -122,4 +122,9 @@ suite('convertToRoman()', () => {
         const result = convertToRoman(30);
         expect(result).toBe('XXX');
     });
+    test('converts 31 to "XXXI"', () => {
+        const result = convertToRoman(31);
+        // test erreur
+        expect(result).toBe('XXI');
+    });
 });
